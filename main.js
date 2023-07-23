@@ -82,10 +82,8 @@ let montoCredito = parseInt(prompt("Ingrese el monto que desea de crédito"));
 resultadoValidarNumero = validarNumero(montoCredito);
 
 if (resultadoValidarNumero === 1) {
-    //alert("es un numero");
 } else {
     while (resultadoValidarNumero !== 1) {
-        //alert("no es numero");
         var montoCredito1 = parseInt(prompt("El valor ingresado no es numérico. Ingrese nuevamente el monto que desea de crédito"));
         resultadoValidarNumero = validarNumero(montoCredito1);
     }
@@ -108,15 +106,12 @@ if (resultadoValidarCuota === 1) {
         var numCuotas1 = parseInt(prompt("El valor ingresado no corresponde a una cuota válida. Ingrese nuevamente el número de cuotas (hasta 24)"));
         resultadoValidarCuota = validarNumero(numCuotas1);
         while (resultadoValidarCuota !== 1 || numCuotas1 > 24) {
-            //alert("El valor ingresado no corresponde a una cuota válida");
             var numCuotas1 = parseInt(prompt("El valor ingresado no corresponde a una cuota válida. Ingrese nuevamente el número de cuotas (hasta 24)"));
             resultadoValidarCuota = validarNumero(numCuotas1);
         }
     }
-    //alert("es un numero");
 } else {     
     while (resultadoValidarCuota !== 1 ||  numCuotas1 >24) {
-        //alert("El valor ingresado no corresponde a una cuota válida");
         var numCuotas1 = parseInt(prompt("El valor ingresado no corresponde a una cuota válida. Ingrese nuevamente el número de cuotas (hasta 24)"));
         resultadoValidarCuota = validarNumero(numCuotas1);
     }
